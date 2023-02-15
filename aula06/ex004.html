@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 3em arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = prompt('Qual o seu nome')
+        var salario = Number(prompt('Futuro salário'))
+        document.write(`Seu nome tem ${nome.length} letras, em maiúsculo fica assim ${nome.toUpperCase(nome)} <br/>`)
+        document.write(`Tem amo ${nome}, saiba que você é impportante para mim <br/>`)
+        document.write(`Daqui alguns meses seu salário será ${salario} trust in the process and God`)
+        document.write(salario.toLocaleString( 'pt-BR', {style:'currency', currency: 'BRL'}))
+    </script>
+</body>
+</html>
